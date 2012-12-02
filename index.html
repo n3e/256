@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta property="og:title" content="256 shades of grey">
+		<meta property="og:type" content="website">
+		<title>THATHAT: 256 ._____.</title>
+		<link type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin,latin-ext" rel="stylesheet">
+		<link type="text/css" href="static/screen.min.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="lib/three.min.js"></script>
+		<script type="text/javascript" src="lib/cubic.min.js"></script>
+		<script type="text/javascript">
+			window.addEventListener('load', function (e) {
+				var o = document.getElementById('._____.');
+				var p = document.getElementById('x_____x');
+				try {
+					/*var c = new CUBE({ width: 4096, height: 4096, speed: 0, wrapper: o, background: 0xf1f1f1 }); */
+					var c = new CUBE({
+						width: o.offsetWidth * 0.98,
+						height: (window.innerHeight - p.offsetHeight - 25) * 0.95,
+						speed: 0.001,
+						wrapper: o,
+						background: 0xf1f1f1
+					});
+					window.addEventListener('keyup', function (e) {
+						key = e.key || e.keyCode;
+						if (key == 83 && c) {
+							c.snapshot();
+						}
+					});
+				}
+				catch (e) {
+					var i = document.createElement('img');
+					i.src = 'static/cube-4096.png';
+					i.style.height = (window.innerHeight - p.offsetHeight) * 0.95 + 'px';
+					o.appendChild(i);
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<div class="pc"><span>4</span> <a href="http://thathat.net" class="mb"></a></div>
+		<div class="pt" id="x_____x">
+			<h1><span>256</span> shades of <span>grey</span></h1>
+		</div>
+		<div class="po" id="._____."></div>
+	</body>
+</html>

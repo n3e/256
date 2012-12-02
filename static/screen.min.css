@@ -1,0 +1,6 @@
+body{background-color:#f1f1f1}.pc{width:404px;position:fixed;right:20px;bottom:20px;text-align:right}
+.pc span{font:100 small monospace;padding:0 10px}.po{width:100%}
+.po img{display:block;margin:auto}.pt{position:absolute;bottom:10px;left:50%}
+.pt h1{margin:0 0 10px -50%;font:100 55px 'open sans condensed',arial,sans-serif;letter-spacing:-2px;text-transform:uppercase}
+.pt h1 span{color:#333}.mb{float:right;display:block;width:22px;height:22px;background:#c22a09;text-decoration:none}
+.fb-like span{display:block;margin:0 0 10px -50%}
